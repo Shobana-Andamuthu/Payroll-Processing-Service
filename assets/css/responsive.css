@@ -1,53 +1,361 @@
 /* ==========================================================================
-   RESPONSIVE OVERRIDES
-   Breakpoints: 320-767 mobile | 768-1023 tablet | 1024-1439 laptop | 1440+ large desktop
+   MERIDIAN PAYROLL — COMPREHENSIVE RESPONSIVE SYSTEM
+   Breakpoints: 200px+ | 320px | 375px | 390px | 430px | 480px | 768px | 820px | 1024px | 1280px | 1440px | 1920px+
+   Zero horizontal scroll, fluid typography & spacing, full screen viewport adaptation.
    ========================================================================== */
 
-/* Tablet */
-@media (max-width: 1023px) {
-  :root { --header-height: 76px; }
-  .section { padding: 76px 0; }
-  .footer-grid { gap: 36px; }
+/* Universal Layout & Overflow Safety */
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: clip;
 }
 
-/* Mobile */
-@media (max-width: 767px) {
-  :root { --header-height: 68px; }
-  .brand { font-size: 17px; }
-  .brand-mark, .brand-mark-img { width: 34px; height: 34px; font-size: 14px; }
-  .brand-tag { display: none; }
-  .footer-bottom { flex-direction: column; align-items: flex-start; text-align: left; }
-  [dir="rtl"] .footer-bottom { align-items: flex-start; text-align: right; }
-  .btn-lg { padding: 14px 24px; font-size: 15px; }
-  .mobile-nav { padding: 14px 16px 28px; height: 100dvh; }
+img, svg, video, canvas, audio, iframe, embed, object {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Tablet: pull floating hero elements fully inside the viewport */
-@media (max-width: 1023px) {
-  .hero-floating-card { left: 12px; bottom: -20px; max-width: 210px; }
-  [dir="rtl"] .hero-floating-card { right: 12px; left: auto; }
-  .hero-badge-top { right: 12px; }
-  [dir="rtl"] .hero-badge-top { left: 12px; right: auto; }
+input, button, select, textarea {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-/* Mobile: simplify further, smaller footprint */
-@media (max-width: 560px) {
-  .hero-visual { padding-bottom: 82px; }
-  .hero-floating-card { left: 16px; right: 16px; bottom: 16px; width: auto; max-width: none; padding: 12px 14px; gap: 9px; }
-  [dir="rtl"] .hero-floating-card { right: 16px; left: 16px; }
-  .hero-floating-card strong { font-size: 13.5px; }
-  .hero-floating-card span { font-size: 11.5px; }
-  .hero-badge-top { right: 16px; max-width: calc(100% - 32px); font-size: 12px; padding: 9px 13px; top: 14px; }
-  [dir="rtl"] .hero-badge-top { left: 16px; right: auto; }
-}
-
-/* Small mobile */
-@media (max-width: 380px) {
-  .container { padding: 0 16px; }
-  .theme-toggle, .hamburger { width: 38px; height: 38px; }
-}
-
-/* Large desktop refinement */
+/* --------------------------------------------------------------------------
+   1. LARGE DESKTOP & ULTRAWIDE (1440px - 1920px+)
+   -------------------------------------------------------------------------- */
 @media (min-width: 1600px) {
-  .container { max-width: 1400px; }
+  :root {
+    --container-max: 1380px;
+  }
+  .container {
+    max-width: var(--container-max);
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --container-max: 1480px;
+    --header-height: 90px;
+  }
+  .section {
+    padding: 110px 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. LAPTOPS & SMALL DESKTOPS (1024px - 1279px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1279px) {
+  .hero-grid {
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLETS & IPADS (768px - 1023px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+  :root {
+    --header-height: 76px;
+  }
+  .section {
+    padding: 72px 0;
+  }
+  .container {
+    padding: 0 28px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .hero-kicker {
+    justify-content: center;
+  }
+  .hero p.lede {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .hero-ctas {
+    justify-content: center;
+  }
+  .hero-visual {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .hero-floating-card {
+    left: 12px;
+    bottom: -16px;
+    max-width: 220px;
+  }
+  [dir="rtl"] .hero-floating-card {
+    right: 12px;
+    left: auto;
+  }
+  .hero-badge-top {
+    right: 12px;
+    top: 16px;
+  }
+  [dir="rtl"] .hero-badge-top {
+    left: 12px;
+    right: auto;
+  }
+  .split {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .split.reverse > :first-child {
+    order: 2;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. MOBILE & SMALL TABLETS (481px - 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 68px;
+  }
+  .section {
+    padding: 56px 0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .brand {
+    font-size: 17px;
+  }
+  .brand-mark, .brand-mark-img {
+    width: 34px;
+    height: 34px;
+  }
+  .brand-tag {
+    display: none;
+  }
+  .btn-lg {
+    padding: 13px 22px;
+    font-size: 14.5px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  [dir="rtl"] .footer-bottom {
+    align-items: flex-start;
+    text-align: right;
+  }
+  .hero-visual {
+    padding-bottom: 70px;
+  }
+  .hero-floating-card {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+    max-width: none;
+    padding: 11px 14px;
+    gap: 10px;
+  }
+  [dir="rtl"] .hero-floating-card {
+    right: 10px;
+    left: 10px;
+  }
+  .hero-badge-top {
+    right: 10px;
+    top: 10px;
+    padding: 8px 12px;
+    font-size: 11.5px;
+  }
+  [dir="rtl"] .hero-badge-top {
+    left: 10px;
+    right: auto;
+  }
+  .trust-strip .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .cta-banner {
+    padding: 36px 24px;
+    text-align: center;
+    justify-content: center;
+  }
+  .cta-banner h2, .cta-banner p {
+    max-width: 100%;
+  }
+  .cta-banner .hero-ctas {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. STANDARD MOBILE (375px - 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero .hero-ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-fullbleed .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-fullbleed .hero-ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .bento {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pricing-toggle {
+    gap: 10px;
+    font-size: 13.5px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .dash-account-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. SMALL MOBILE (320px - 374px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 374px) {
+  .container {
+    padding: 0 14px;
+  }
+  .brand {
+    font-size: 15px;
+    gap: 8px;
+  }
+  .brand-mark, .brand-mark-img {
+    width: 30px;
+    height: 30px;
+  }
+  .btn {
+    padding: 11px 18px;
+    font-size: 13.5px;
+  }
+  .btn-sm {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+  .card {
+    padding: 20px 16px;
+  }
+  .service-card {
+    padding: 20px 16px;
+  }
+  .stat-card {
+    padding: 20px 14px;
+  }
+  .process-step {
+    padding: 20px 16px;
+  }
+  .spotlight-quote blockquote {
+    font-size: 18px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. ULTRA-NARROW VIEWPORTS (200px - 319px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 319px) {
+  :root {
+    --header-height: 60px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .site-header .container {
+    gap: 8px;
+  }
+  .brand {
+    font-size: 13px;
+    gap: 6px;
+  }
+  .brand-mark, .brand-mark-img {
+    width: 26px;
+    height: 26px;
+  }
+  .hamburger {
+    width: 34px;
+    height: 34px;
+  }
+  .hamburger span, .hamburger span::before, .hamburger span::after {
+    width: 14px;
+  }
+  .hero-floating-card {
+    position: static;
+    margin-top: 14px;
+    padding: 8px 10px;
+  }
+  .hero-visual {
+    padding-bottom: 0;
+  }
+  .hero-badge-top {
+    position: static;
+    margin-top: 10px;
+    display: inline-flex;
+  }
+  .btn {
+    padding: 9px 12px;
+    font-size: 12px;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+  }
+  .eyebrow, .eyebrow-light {
+    font-size: 10.5px;
+    padding: 4px 10px;
+    letter-spacing: 0.06em;
+  }
+  .hero h1, .inner-page-hero h1, .hero-fullbleed h1 {
+    font-size: 20px !important;
+    word-break: break-word;
+  }
+  .hero p.lede, .inner-page-hero p.lede, .hero-fullbleed p.lede {
+    font-size: 13px !important;
+  }
+  .chip {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  .stat-card .num, .hero-fullbleed-stats .num {
+    font-size: 20px !important;
+  }
+  .stat-card .label, .hero-fullbleed-stats .label {
+    font-size: 10.5px !important;
+  }
+  .footer-col h4 {
+    font-size: 13px;
+  }
+  .footer-links a {
+    font-size: 12.5px;
+  }
 }
