@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | Meridian Payroll</title>
+<link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
+<meta name="description" content="Transparent, per-employee payroll pricing plans for businesses of every size.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <div id="page-loader" aria-hidden="true">
+    <img src="assets/images/logo/logo.svg" alt="" class="loader-mark">
+    <div class="loader-bar"></div>
+  </div>
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo/logo.svg" alt="Meridian Payroll logo" class="brand-mark-img">
+        <span>
+          Meridian Payroll
+          <span class="brand-tag">Payroll. Perfected.</span>
+        </span>
+      </a>
+
+      <nav class="nav-primary" aria-label="Primary">
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link" data-nav-page="index.html">
+            Home
+            <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="nav-dropdown">
+            <a href="index.html" data-nav-page="index.html">Home 1<span class="sub">Classic overview</span></a>
+            <a href="home-2.html" data-nav-page="home-2.html">Home 2<span class="sub">Alternate layout</span></a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link" data-nav-page="services.html">Services</a>
+        </div>
+        <div class="nav-item">
+          <a href="how-it-works.html" class="nav-link" data-nav-page="how-it-works.html">How It Works</a>
+        </div>
+        <div class="nav-item">
+          <a href="pricing.html" class="nav-link" data-nav-page="pricing.html">Pricing</a>
+        </div>
+        <div class="nav-item">
+          <a href="industries.html" class="nav-link" data-nav-page="industries.html">Industries</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link" data-nav-page="about.html">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link" data-nav-page="contact.html">Contact</a>
+        </div>
+        <div class="nav-item">
+          <a href="dashboard.html" class="nav-link" data-nav-page="dashboard.html">Dashboard</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button class="dir-toggle" aria-label="Switch to right-to-left" type="button">
+          <span class="dir-label">RTL</span>
+        </button>
+
+        <a href="login.html" class="btn btn-primary btn-sm" data-nav-page="login.html">Login</a>
+
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE NAV ===================== -->
+  <div class="mobile-nav" aria-label="Mobile navigation">
+    <div class="mobile-nav-top">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo/logo.svg" alt="Meridian Payroll logo" class="brand-mark-img">
+        <span>
+          Meridian Payroll
+          <span class="brand-tag">Payroll. Perfected.</span>
+        </span>
+      </a>
+      <button class="mobile-nav-close" aria-label="Close menu" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <div class="mobile-dropdown-toggle mobile-nav-link" data-nav-page="index.html" role="button" tabindex="0">
+        <span>Home</span>
+        <svg class="mobile-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="mobile-submenu">
+        <a href="index.html" data-nav-page="index.html">Home 1 &mdash; Classic overview</a>
+        <a href="home-2.html" data-nav-page="home-2.html">Home 2 &mdash; Alternate layout</a>
+      </div>
+      <a href="services.html" class="mobile-nav-link" data-nav-page="services.html">Services</a>
+      <a href="how-it-works.html" class="mobile-nav-link" data-nav-page="how-it-works.html">How It Works</a>
+      <a href="pricing.html" class="mobile-nav-link" data-nav-page="pricing.html">Pricing</a>
+      <a href="industries.html" class="mobile-nav-link" data-nav-page="industries.html">Industries</a>
+      <a href="about.html" class="mobile-nav-link" data-nav-page="about.html">About Us</a>
+      <a href="contact.html" class="mobile-nav-link" data-nav-page="contact.html">Contact</a>
+      <a href="dashboard.html" class="mobile-nav-link" data-nav-page="dashboard.html">Dashboard</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-toggles">
+        <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41-1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <span class="theme-label">Theme Mode</span>
+        </button>
+        <button class="dir-toggle" aria-label="Switch to right-to-left" type="button">
+          <span class="dir-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-primary" data-nav-page="login.html">Login</a>
+    </div>
+  </div>
+
+  
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero hero-centered">
+      <div class="container">
+        <div class="section-head center anim-fade-up">
+          <span class="eyebrow">Pricing</span>
+          <h1 style="margin-top:16px;">Simple, transparent pricing per employee.</h1>
+          <p class="lede">No setup fees. No long-term contracts. Cancel anytime with 30 days' notice.</p>
+        </div>
+        <div class="anim-fade-up anim-delay-3" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:28px;">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20 6L9 17l-5-5"/></svg> No setup fees</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20 6L9 17l-5-5"/></svg> Cancel anytime</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20 6L9 17l-5-5"/></svg> 12-month price lock</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20 6L9 17l-5-5"/></svg> Compliance guarantee</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PRICING CARDS -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="pricing-toggle" data-reveal>
+          <span data-pricing-label="monthly" class="is-active">Monthly</span>
+          <button class="toggle-switch" type="button" data-pricing-toggle aria-label="Toggle annual pricing"><span class="knob"></span></button>
+          <span data-pricing-label="annual">Annual <span class="save-badge">Save 15%</span></span>
+        </div>
+        <div class="pricing-grid">
+          <div class="card price-card" data-reveal>
+            <h3>Starter</h3>
+            <p class="plan-desc">For businesses just getting off spreadsheets.</p>
+            <div class="price"><span class="amount">$<span data-price-monthly="6" data-price-annual="5">6</span></span><span class="period">/ employee / mo</span></div>
+            <p class="price-note">+ $39 base fee per month</p>
+            <ul class="list-check">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Core payroll processing</strong><span class="desc">Weekly, biweekly or monthly pay runs.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Federal & state tax filing</strong><span class="desc">Automatic filing and remittance included.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Employee self-service portal</strong><span class="desc">Pay stubs and tax documents on demand.</span></div></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Get Started</a>
+          </div>
+          <div class="card price-card is-featured" data-reveal data-reveal-delay="1">
+            <span class="badge-featured">Most Popular</span>
+            <h3>Growth</h3>
+            <p class="plan-desc">For multi-state teams that need benefits synced in.</p>
+            <div class="price"><span class="amount">$<span data-price-monthly="10" data-price-annual="8.5">10</span></span><span class="period">/ employee / mo</span></div>
+            <p class="price-note">+ $59 base fee per month</p>
+            <ul class="list-check">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Everything in Starter</strong><span class="desc">All core payroll and tax filing features.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Multi-state payroll</strong><span class="desc">Unlimited work locations and tax jurisdictions.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Benefits administration</strong><span class="desc">Health, retirement and PTO synced with payroll.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Dedicated account specialist</strong><span class="desc">One named point of contact for your account.</span></div></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Get Started</a>
+          </div>
+          <div class="card price-card" data-reveal data-reveal-delay="2">
+            <h3>Enterprise</h3>
+            <p class="plan-desc">For larger organizations with custom needs.</p>
+            <div class="price"><span class="amount">Custom</span></div>
+            <p class="price-note">Volume pricing based on headcount</p>
+            <ul class="list-check">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Everything in Growth</strong><span class="desc">All features from the Growth plan included.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Certified payroll reporting</strong><span class="desc">Prevailing wage and government contract compliance.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Custom integrations</strong><span class="desc">Connect to your existing ERP or HRIS system.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Priority support SLA</strong><span class="desc">Guaranteed response times and a named success manager.</span></div></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Talk to Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMPARISON TABLE -->
+    <section class="section" style="background:var(--color-surface-alt);">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Compare Plans</span>
+          <h2>See exactly what's included.</h2>
+        </div>
+        <div class="card pricing-compare" data-reveal>
+          <table>
+            <thead><tr><th>Feature</th><th>Starter</th><th>Growth</th><th>Enterprise</th></tr></thead>
+            <tbody>
+              <tr><td>Payroll processing</td><td class="yes">Included</td><td class="yes">Included</td><td class="yes">Included</td></tr>
+              <tr><td>Tax filing & remittance</td><td class="yes">Included</td><td class="yes">Included</td><td class="yes">Included</td></tr>
+              <tr><td>Multi-state payroll</td><td class="no">&mdash;</td><td class="yes">Included</td><td class="yes">Included</td></tr>
+              <tr><td>Benefits administration</td><td class="no">&mdash;</td><td class="yes">Included</td><td class="yes">Included</td></tr>
+              <tr><td>Dedicated specialist</td><td class="no">&mdash;</td><td class="yes">Included</td><td class="yes">Included</td></tr>
+              <tr><td>Certified payroll reports</td><td class="no">&mdash;</td><td class="no">&mdash;</td><td class="yes">Included</td></tr>
+              <tr><td>Custom integrations</td><td class="no">&mdash;</td><td class="no">&mdash;</td><td class="yes">Included</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ADD-ONS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Add-Ons</span>
+          <h2>Extend any plan as you grow.</h2>
+        </div>
+        <div class="bento">
+          <div class="card service-card" data-reveal><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>HR Advisory</h3><p>On-demand access to HR compliance specialists for policy and employee-relations questions.</p></div>
+          <div class="card service-card" data-reveal data-reveal-delay="1"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div><h3>Certified Payroll Reports</h3><p>Prevailing wage and government contract reporting, available as a standalone add-on.</p></div>
+          <div class="card service-card" data-reveal data-reveal-delay="2"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><h3>Time & Attendance</h3><p>Add time-tracking with automatic import into every payroll run.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. GUARANTEE -->
+    <section class="section" style="background:var(--color-surface-alt);">
+      <div class="container">
+        <div class="split">
+          <img src="assets/images/sections/compliance-guarantee.jpg" alt="Business owner reviewing a payroll compliance guarantee" loading="lazy" data-reveal>
+          <div data-reveal>
+            <span class="eyebrow">Our Guarantee</span>
+            <h2 style="margin-top:16px;">If we file it wrong, we fix it — on us.</h2>
+            <p style="margin-top:14px; color:var(--color-text-muted); font-size:16px;">Every plan includes our tax compliance guarantee: if a filing error on our end results in a penalty, Meridian covers the cost. No fine print, no exceptions.</p>
+            <ul class="list-check">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Penalty coverage</strong><span class="desc">We pay any penalty caused by a filing error on our part.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>No long-term contract</strong><span class="desc">Month-to-month billing with 30 days' notice to cancel.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Price-lock for 12 months</strong><span class="desc">Your per-employee rate is locked for your first year.</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Pricing FAQ</span>
+          <h2>Questions about cost and billing.</h2>
+        </div>
+        <div class="faq-list" data-reveal>
+          <div class="faq-item">
+      <button class="faq-question" type="button"><span>Is there a setup or onboarding fee?</span><span class="plus"></span></button>
+      <div class="faq-answer"><p>No. Onboarding, data migration and the parallel test run are included in every plan at no extra charge.</p></div>
+    </div>
+          <div class="faq-item">
+      <button class="faq-question" type="button"><span>How is per-employee pricing calculated?</span><span class="plus"></span></button>
+      <div class="faq-answer"><p>You're billed for active employees paid in a given cycle — seasonal or terminated employees aren't charged once removed from payroll.</p></div>
+    </div>
+          <div class="faq-item">
+      <button class="faq-question" type="button"><span>Can I switch plans later?</span><span class="plus"></span></button>
+      <div class="faq-answer"><p>Yes, you can upgrade or downgrade at any time and the change takes effect on your next billing cycle.</p></div>
+    </div>
+          <div class="faq-item">
+      <button class="faq-question" type="button"><span>What payment methods do you accept?</span><span class="plus"></span></button>
+      <div class="faq-answer"><p>ACH bank transfer and major credit cards are supported, managed directly from your dashboard.</p></div>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="cta-banner" data-reveal>
+          <div>
+            <h2>Get a quote tailored to your headcount.</h2>
+            <p>Tell us your employee count and states of operation, and we'll send a custom quote within one business day.</p>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; position:relative; z-index:1;">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+            <a href="contact.html" class="btn btn-outline btn-lg">Talk to Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand" style="color:#fff;">
+            <img src="assets/images/logo/logo.svg" alt="Meridian Payroll logo" class="brand-mark-img">
+            <span>Meridian Payroll</span>
+          </a>
+          <p>Full-service payroll processing, tax compliance and benefits administration for growing businesses. Accurate, on time, every pay cycle.</p>
+          <div class="footer-socials" style="margin-top:20px;">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.5V23H.24V8.25zM8.5 8.25h4.31v2.02h.06c.6-1.13 2.07-2.32 4.26-2.32 4.55 0 5.39 3 5.39 6.9V23h-4.5v-6.7c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.55V23H8.5V8.25z"/></svg></a>
+            <a href="#" aria-label="Twitter/X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.8 22H1.7l8.2-9.3L1 2h7.1l4.9 6.1L18.9 2z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-9h3l.5-3.5h-3.5V7.4c0-1 .3-1.7 1.8-1.7h1.9V2.5C16.9 2.4 15.7 2.3 14.4 2.3c-2.8 0-4.7 1.7-4.7 4.8v2.4H7.2V13h2.5v9h3.8z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="industries.html">Industries Served</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="services.html">Payroll Processing</a></li>
+            <li><a href="services.html">Tax Compliance</a></li>
+            <li><a href="services.html">Benefits Administration</a></li>
+            <li><a href="pricing.html">Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Access</h4>
+          <ul>
+            <li><a href="login.html">Client Login</a></li>
+            <li><a href="register.html">Create an Account</a></li>
+            <li><a href="dashboard.html">Guest Dashboard Preview</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Meridian Payroll, Inc. All rights reserved.</p>
+        <p>Privacy Policy &nbsp;•&nbsp; Terms of Service &nbsp;•&nbsp; Security</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

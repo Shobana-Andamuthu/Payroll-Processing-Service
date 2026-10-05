@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create an Account | Meridian Payroll</title>
+<link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
+<meta name="description" content="Create your Meridian Payroll business client account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <div id="page-loader" aria-hidden="true">
+    <img src="assets/images/logo/logo.svg" alt="" class="loader-mark">
+    <div class="loader-bar"></div>
+  </div>
+    <div class="auth-shell">
+      <div class="auth-visual anim-fade-in">
+        <div>
+          <div class="auth-brand-row">
+            <a href="index.html" class="brand"><img src="assets/images/logo/logo.svg" alt="Meridian Payroll logo" class="brand-mark-img"><span>Meridian Payroll</span></a>
+            <div class="auth-controls">
+              <button class="theme-toggle" aria-label="Switch to dark mode" type="button"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41-1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+              <button class="dir-toggle" aria-label="Switch to right-to-left" type="button"><span class="dir-label">RTL</span></button>
+            </div>
+          </div>
+          <p class="auth-quote anim-fade-up anim-delay-1">&ldquo;Onboarding took ten days and every number matched on the first live run.&rdquo;</p>
+          <p class="auth-quote-by anim-fade-up anim-delay-2">&mdash; Marcus Ihejirika, Owner, Brightline Construction</p>
+        </div>
+        <div class="auth-stats anim-fade-up anim-delay-3">
+          <div><strong>10 days</strong><span>Average onboarding</span></div>
+          <div><strong>0</strong><span>Setup fees</span></div>
+          <div><strong>24hr</strong><span>Support response</span></div>
+        </div>
+      </div>
+      <div class="auth-form-side">
+        <div class="auth-form-wrap anim-fade-up">
+          <span class="eyebrow">Create an Account</span>
+          <h1>Let's get your business set up.</h1>
+          <p class="lede">Create your account to start onboarding — no credit card required to begin.</p>
+          <form>
+            <div class="form-field">
+              <label for="r-company">Company name</label>
+              <input id="r-company" type="text" placeholder="Acme Co.">
+            </div>
+            <div class="form-field">
+              <label for="r-email">Work email</label>
+              <input id="r-email" type="email" placeholder="jordan@acme.com">
+            </div>
+            <div class="form-field password-field">
+              <label for="r-password">Create password</label>
+              <input id="r-password" type="password" placeholder="At least 8 characters">
+              <button type="button" class="password-toggle" aria-label="Show password"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+            </div>
+            <div class="form-field">
+              <label for="r-size">Number of employees</label>
+              <select id="r-size"><option>1&ndash;10</option><option>11&ndash;50</option><option>51&ndash;200</option><option>200+</option></select>
+            </div>
+            <a href="dashboard.html" class="btn btn-primary btn-lg" style="width:100%;">Create Account</a>
+          </form>
+          <div class="auth-divider">or continue with</div>
+          <div class="social-auth">
+            <button type="button" class="btn btn-outline"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.6 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.56c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.56-2.77c-.99.66-2.25 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.85A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.05H2.18a11 11 0 0 0 0 9.9z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1a11 11 0 0 0-9.82 6.05l3.66 2.85c.87-2.6 3.3-4.52 6.16-4.52z"/></svg> Google</button>
+            <button type="button" class="btn btn-outline"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" fill="#F35325"/><rect x="13" y="2" width="9" height="9" fill="#81BC06"/><rect x="2" y="13" width="9" height="9" fill="#05A6F0"/><rect x="13" y="13" width="9" height="9" fill="#FFBA08"/></svg> Microsoft</button>
+          </div>
+          <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+      </div>
+    </div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

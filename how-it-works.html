@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works | Meridian Payroll</title>
+<link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
+<meta name="description" content="How Meridian Payroll onboards and runs your payroll, step by step.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <div id="page-loader" aria-hidden="true">
+    <img src="assets/images/logo/logo.svg" alt="" class="loader-mark">
+    <div class="loader-bar"></div>
+  </div>
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo/logo.svg" alt="Meridian Payroll logo" class="brand-mark-img">
+        <span>
+          Meridian Payroll
+          <span class="brand-tag">Payroll. Perfected.</span>
+        </span>
+      </a>
+
+      <nav class="nav-primary" aria-label="Primary">
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link" data-nav-page="index.html">
+            Home
+            <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="nav-dropdown">
+            <a href="index.html" data-nav-page="index.html">Home 1<span class="sub">Classic overview</span></a>
+            <a href="home-2.html" data-nav-page="home-2.html">Home 2<span class="sub">Alternate layout</span></a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link" data-nav-page="services.html">Services</a>
+        </div>
+        <div class="nav-item">
+          <a href="how-it-works.html" class="nav-link" data-nav-page="how-it-works.html">How It Works</a>
+        </div>
+        <div class="nav-item">
+          <a href="pricing.html" class="nav-link" data-nav-page="pricing.html">Pricing</a>
+        </div>
+        <div class="nav-item">
+          <a href="industries.html" class="nav-link" data-nav-page="industries.html">Industries</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link" data-nav-page="about.html">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link" data-nav-page="contact.html">Contact</a>
+        </div>
+        <div class="nav-item">
+          <a href="dashboard.html" class="nav-link" data-nav-page="dashboard.html">Dashboard</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button class="dir-toggle" aria-label="Switch to right-to-left" type="button">
+          <span class="dir-label">RTL</span>
+        </button>
+
+        <a href="login.html" class="btn btn-primary btn-sm" data-nav-page="login.html">Login</a>
+
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE NAV ===================== -->
+  <div class="mobile-nav" aria-label="Mobile navigation">
+    <div class="mobile-nav-top">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo/logo.svg" alt="Meridian Payroll logo" class="brand-mark-img">
+        <span>
+          Meridian Payroll
+          <span class="brand-tag">Payroll. Perfected.</span>
+        </span>
+      </a>
+      <button class="mobile-nav-close" aria-label="Close menu" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <div class="mobile-dropdown-toggle mobile-nav-link" data-nav-page="index.html" role="button" tabindex="0">
+        <span>Home</span>
+        <svg class="mobile-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="mobile-submenu">
+        <a href="index.html" data-nav-page="index.html">Home 1 &mdash; Classic overview</a>
+        <a href="home-2.html" data-nav-page="home-2.html">Home 2 &mdash; Alternate layout</a>
+      </div>
+      <a href="services.html" class="mobile-nav-link" data-nav-page="services.html">Services</a>
+      <a href="how-it-works.html" class="mobile-nav-link" data-nav-page="how-it-works.html">How It Works</a>
+      <a href="pricing.html" class="mobile-nav-link" data-nav-page="pricing.html">Pricing</a>
+      <a href="industries.html" class="mobile-nav-link" data-nav-page="industries.html">Industries</a>
+      <a href="about.html" class="mobile-nav-link" data-nav-page="about.html">About Us</a>
+      <a href="contact.html" class="mobile-nav-link" data-nav-page="contact.html">Contact</a>
+      <a href="dashboard.html" class="mobile-nav-link" data-nav-page="dashboard.html">Dashboard</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-toggles">
+        <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41-1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <span class="theme-label">Theme Mode</span>
+        </button>
+        <button class="dir-toggle" aria-label="Switch to right-to-left" type="button">
+          <span class="dir-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-primary" data-nav-page="login.html">Login</a>
+    </div>
+  </div>
+
+  
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero hero-centered">
+      <div class="container">
+        <div class="section-head center anim-fade-up">
+          <span class="eyebrow">How It Works</span>
+          <h1 style="margin-top:16px;">From sign-up to your first payroll run in under two weeks.</h1>
+          <p class="lede">No disruption, no double-paying employees, no missed filings during the switch. Here's exactly how onboarding works.</p>
+        </div>
+        <img class="anim-scale-in anim-delay-2" style="border-radius:var(--radius-lg); box-shadow:var(--shadow-lg); width:100%; margin:36px 0 0; display:block; aspect-ratio:21/9; object-fit:cover;" src="assets/images/hero/how-it-works-hero.jpg" alt="Onboarding specialist walking a client through the payroll setup timeline" loading="lazy">
+        <div class="stats-grid cols-3 anim-fade-up anim-delay-3" style="margin-top:32px;">
+          <div class="stat-card"><div class="num">10 days</div><div class="label">Average onboarding</div></div>
+          <div class="stat-card"><div class="num">$0</div><div class="label">Setup fees</div></div>
+          <div class="stat-card"><div class="num">24hr</div><div class="label">Support response</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ONBOARDING TIMELINE -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width:880px; margin:0 auto;">
+          <div class="timeline">
+            <div class="timeline-item" data-reveal>
+              <div class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><path d="M21 14v3a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 2v-1zM3 14v1a2 2 0 0 0 2 2h1v-6H5a2 2 0 0 0-2 2v1z"/></svg></div>
+              <span class="year">Day 1</span>
+              <h3>Discovery call</h3>
+              <p>We learn your headcount, states, pay schedule and current provider, then assign a dedicated onboarding specialist.</p>
+            </div>
+            <div class="timeline-item" data-reveal data-reveal-delay="1">
+              <div class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M6 10l6-6 6 6"/><path d="M4 20h16"/></svg></div>
+              <span class="year">Days 2&ndash;5</span>
+              <h3>Data migration</h3>
+              <p>Employee records, wage history and tax accounts are imported from your existing provider — you review and confirm accuracy.</p>
+            </div>
+            <div class="timeline-item" data-reveal data-reveal-delay="2">
+              <div class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
+              <span class="year">Days 6&ndash;9</span>
+              <h3>Parallel test run</h3>
+              <p>We run a full payroll cycle side-by-side with your current system so every number is verified before go-live.</p>
+            </div>
+            <div class="timeline-item" data-reveal data-reveal-delay="3">
+              <div class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+              <span class="year">Day 10</span>
+              <h3>Go live</h3>
+              <p>Your first live payroll run processes through Meridian — with your specialist monitoring the entire cycle.</p>
+            </div>
+            <div class="timeline-item" data-reveal data-reveal-delay="4">
+              <div class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 6 2 8 2 8H4s2-2 2-8"/><path d="M10 21a2 2 0 0 0 4 0"/></svg></div>
+              <span class="year">Ongoing</span>
+              <h3>Continuous support</h3>
+              <p>Your specialist stays your point of contact for every future pay run, tax season and benefits enrollment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DATA SECURITY -->
+    <section class="section" style="background:var(--color-surface-alt);">
+      <div class="container">
+        <div class="split">
+          <img src="assets/images/sections/data-center-servers.jpg" alt="Secure data center servers protecting payroll data" loading="lazy" data-reveal>
+          <div data-reveal>
+            <span class="eyebrow">Security &amp; Compliance</span>
+            <h2 style="margin-top:16px;">Your payroll data, protected like a bank's.</h2>
+            <p style="margin-top:14px; color:var(--color-text-muted); font-size:16px;">Every payroll run and employee record is encrypted in transit and at rest, backed by independently audited controls.</p>
+            <ul class="list-check">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>SOC 2 Type II certified</strong><span class="desc">Annual independent audits of our security, availability and confidentiality controls.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Bank-level encryption</strong><span class="desc">256-bit encryption for data at rest and in transit, every time.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Role-based access controls</strong><span class="desc">Your team only sees the payroll data relevant to their role.</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DEDICATED SUPPORT -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div data-reveal>
+            <span class="eyebrow">Support</span>
+            <h2 style="margin-top:16px;">A real person answers, not a ticket queue.</h2>
+            <p style="margin-top:14px; color:var(--color-text-muted); font-size:16px;">Every client is paired with a dedicated payroll specialist who knows your setup — reachable by phone, email or live chat with a 24-hour response guarantee.</p>
+            <ul class="list-check">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Named account specialist</strong><span class="desc">The same person handles your account call after call.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>24-hour response guarantee</strong><span class="desc">Urgent payroll issues are addressed same business day.</span></div></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Quarterly check-ins</strong><span class="desc">Proactive reviews to catch issues before they become problems.</span></div></li>
+            </ul>
+          </div>
+          <img src="assets/images/hero/contact-hero.jpg" alt="Support specialist assisting a client over the phone" loading="lazy" data-reveal>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHY SWITCH -->
+    <section class="section" style="background:var(--color-surface-alt);">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Why Businesses Switch</span>
+          <h2>The problems Meridian was built to remove.</h2>
+        </div>
+        <div class="bento">
+          <div class="card service-card" data-reveal><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3>Missed deadlines</h3><p>Late tax filings and missed pay dates disappear with automated scheduling and reminders.</p></div>
+          <div class="card service-card" data-reveal data-reveal-delay="1"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7l-3 6a3.5 3.5 0 0 0 7 0zM19 7l-3 6a3.5 3.5 0 0 0 7 0zM5 7h14M9 21h6"/></svg></div><h3>Compliance risk</h3><p>Multi-state rules and rate changes are tracked and applied automatically, not manually.</p></div>
+          <div class="card service-card" data-reveal data-reveal-delay="2"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg></div><h3>Disconnected tools</h3><p>Payroll, benefits and accounting stay in sync instead of living in separate spreadsheets.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Onboarding FAQ</span>
+          <h2>Common questions about switching.</h2>
+        </div>
+        <div class="faq-list" data-reveal>
+          <div class="faq-item">
+      <button class="faq-question" type="button"><span>Will my employees notice we switched providers?</span><span class="plus"></span></button>
+      <div class="faq-answer"><p>No — pay dates, direct deposit and pay stub access continue without interruption. Employees simply get a new self-service portal login.</p></div>
+    </div>
+          <div class="faq-item">
+      <button class="faq-question" type="button"><span>What if we're mid-quarter with tax filings?</span><span class="plus"></span></button>
+      <div class="faq-answer"><p>We coordinate with your current provider to ensure quarter-to-date tax liabilities transfer correctly, so nothing is filed twice or missed.</p></div>
+    </div>
+          <div class="faq-item">
+      <button class="faq-question" type="button"><span>How long does onboarding really take?</span><span class="plus"></span></button>
+      <div class="faq-answer"><p>Most businesses go live within 10 business days. Larger or multi-state companies typically take 3&ndash;4 weeks depending on complexity.</p></div>
+    </div>
+          <div class="faq-item">
+      <button class="faq-question" type="button"><span>Do we need to do anything during the parallel run?</span><span class="plus"></span></button>
+      <div class="faq-answer"><p>Just review the side-by-side results with your specialist and confirm the numbers match before we go live.</p></div>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="cta-banner" data-reveal>
+          <div>
+            <h2>See your onboarding timeline.</h2>
+            <p>Book a short discovery call and we'll map out exactly what switching to Meridian looks like for your business.</p>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; position:relative; z-index:1;">
+            <a href="contact.html" class="btn btn-primary btn-lg">Book a Discovery Call</a>
+            <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand" style="color:#fff;">
+            <img src="assets/images/logo/logo.svg" alt="Meridian Payroll logo" class="brand-mark-img">
+            <span>Meridian Payroll</span>
+          </a>
+          <p>Full-service payroll processing, tax compliance and benefits administration for growing businesses. Accurate, on time, every pay cycle.</p>
+          <div class="footer-socials" style="margin-top:20px;">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.25h4.5V23H.24V8.25zM8.5 8.25h4.31v2.02h.06c.6-1.13 2.07-2.32 4.26-2.32 4.55 0 5.39 3 5.39 6.9V23h-4.5v-6.7c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.55V23H8.5V8.25z"/></svg></a>
+            <a href="#" aria-label="Twitter/X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.8 22H1.7l8.2-9.3L1 2h7.1l4.9 6.1L18.9 2z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-9h3l.5-3.5h-3.5V7.4c0-1 .3-1.7 1.8-1.7h1.9V2.5C16.9 2.4 15.7 2.3 14.4 2.3c-2.8 0-4.7 1.7-4.7 4.8v2.4H7.2V13h2.5v9h3.8z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="industries.html">Industries Served</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="services.html">Payroll Processing</a></li>
+            <li><a href="services.html">Tax Compliance</a></li>
+            <li><a href="services.html">Benefits Administration</a></li>
+            <li><a href="pricing.html">Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Access</h4>
+          <ul>
+            <li><a href="login.html">Client Login</a></li>
+            <li><a href="register.html">Create an Account</a></li>
+            <li><a href="dashboard.html">Guest Dashboard Preview</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Meridian Payroll, Inc. All rights reserved.</p>
+        <p>Privacy Policy &nbsp;•&nbsp; Terms of Service &nbsp;•&nbsp; Security</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

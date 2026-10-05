@@ -1,0 +1,53 @@
+/* ==========================================================================
+   RESPONSIVE OVERRIDES
+   Breakpoints: 320-767 mobile | 768-1023 tablet | 1024-1439 laptop | 1440+ large desktop
+   ========================================================================== */
+
+/* Tablet */
+@media (max-width: 1023px) {
+  :root { --header-height: 76px; }
+  .section { padding: 76px 0; }
+  .footer-grid { gap: 36px; }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  :root { --header-height: 68px; }
+  .brand { font-size: 17px; }
+  .brand-mark, .brand-mark-img { width: 34px; height: 34px; font-size: 14px; }
+  .brand-tag { display: none; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; text-align: left; }
+  [dir="rtl"] .footer-bottom { align-items: flex-start; text-align: right; }
+  .btn-lg { padding: 14px 24px; font-size: 15px; }
+  .mobile-nav { padding: 14px 16px 28px; height: 100dvh; }
+}
+
+/* Tablet: pull floating hero elements fully inside the viewport */
+@media (max-width: 1023px) {
+  .hero-floating-card { left: 12px; bottom: -20px; max-width: 210px; }
+  [dir="rtl"] .hero-floating-card { right: 12px; left: auto; }
+  .hero-badge-top { right: 12px; }
+  [dir="rtl"] .hero-badge-top { left: 12px; right: auto; }
+}
+
+/* Mobile: simplify further, smaller footprint */
+@media (max-width: 560px) {
+  .hero-visual { padding-bottom: 82px; }
+  .hero-floating-card { left: 16px; right: 16px; bottom: 16px; width: auto; max-width: none; padding: 12px 14px; gap: 9px; }
+  [dir="rtl"] .hero-floating-card { right: 16px; left: 16px; }
+  .hero-floating-card strong { font-size: 13.5px; }
+  .hero-floating-card span { font-size: 11.5px; }
+  .hero-badge-top { right: 16px; max-width: calc(100% - 32px); font-size: 12px; padding: 9px 13px; top: 14px; }
+  [dir="rtl"] .hero-badge-top { left: 16px; right: auto; }
+}
+
+/* Small mobile */
+@media (max-width: 380px) {
+  .container { padding: 0 16px; }
+  .theme-toggle, .hamburger { width: 38px; height: 38px; }
+}
+
+/* Large desktop refinement */
+@media (min-width: 1600px) {
+  .container { max-width: 1400px; }
+}

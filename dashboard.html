@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Dashboard | Meridian Payroll</title>
+<link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
+<meta name="description" content="Manage payroll runs, tax filings, employee records and compliance reports.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body class="dashboard-page">
+  <div id="page-loader" aria-hidden="true">
+    <img src="assets/images/logo/logo.svg" alt="" class="loader-mark">
+    <div class="loader-bar"></div>
+  </div>
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo/logo.svg" alt="Meridian Payroll logo" class="brand-mark-img">
+        <span>
+          Meridian Payroll
+          <span class="brand-tag">Payroll. Perfected.</span>
+        </span>
+      </a>
+
+      <nav class="nav-primary" aria-label="Primary">
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link" data-nav-page="index.html">
+            Home
+            <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="nav-dropdown">
+            <a href="index.html" data-nav-page="index.html">Home 1<span class="sub">Classic overview</span></a>
+            <a href="home-2.html" data-nav-page="home-2.html">Home 2<span class="sub">Alternate layout</span></a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="services.html" class="nav-link" data-nav-page="services.html">Services</a>
+        </div>
+        <div class="nav-item">
+          <a href="how-it-works.html" class="nav-link" data-nav-page="how-it-works.html">How It Works</a>
+        </div>
+        <div class="nav-item">
+          <a href="pricing.html" class="nav-link" data-nav-page="pricing.html">Pricing</a>
+        </div>
+        <div class="nav-item">
+          <a href="industries.html" class="nav-link" data-nav-page="industries.html">Industries</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link" data-nav-page="about.html">About Us</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link" data-nav-page="contact.html">Contact</a>
+        </div>
+        <div class="nav-item">
+          <a href="dashboard.html" class="nav-link" data-nav-page="dashboard.html">Dashboard</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="dashboard-back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span class="back-text">Back to Site</span>
+        </a>
+
+        <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41-1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button class="dir-toggle" aria-label="Switch to right-to-left" type="button">
+          <span class="dir-label">RTL</span>
+        </button>
+
+        <a href="login.html" class="dashboard-logout-btn" aria-label="Log Out" title="Log Out">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  
+
+
+  <div class="dash-shell">
+    <aside class="dash-sidebar">
+      <div class="dash-profile">
+        <img src="assets/images/avatars/jordan-lee.jpg" alt="Jordan Lee, account administrator" loading="lazy">
+        <div><strong>Jordan Lee</strong><span>Acme Co. &middot; Admin</span></div>
+      </div>
+      <div class="dash-nav-group">
+        <span class="group-label">Overview</span>
+        <a href="#overview" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg> Dashboard</a>
+        <a href="#payroll" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 6.5c0-1.9-2.2-3.4-5-3.4S7 4.6 7 6.5c0 4 10 2 10 6.5 0 2-2.2 3.5-5 3.5s-5-1.4-5-3.5"/></svg> Payroll Runs</a>
+        <a href="#tax" class="dash-nav-link is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg> Tax Filings</a>
+      </div>
+      <div class="dash-nav-group">
+        <span class="group-label">Records</span>
+        <a href="#employees" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg> Employees</a>
+        <a href="#reports" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Compliance Reports</a>
+      </div>
+      <div class="dash-nav-group">
+        <span class="group-label">Account</span>
+        <a href="#billing" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg> Billing & Payments</a>
+        <a href="#settings" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg> Account Settings</a>
+      </div>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-topbar">
+        <button class="dash-menu-toggle" aria-label="Toggle dashboard menu" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg></button>
+        <div>
+          <h1 id="overview">Welcome back, Jordan</h1>
+          <p class="dash-date">Acme Co. &middot; Next payroll run: Friday, Sep 19, 2026</p>
+        </div>
+        <a href="#payroll" class="btn btn-primary">Run Payroll Now</a>
+      </div>
+
+      <!-- WIDGETS -->
+      <div class="dash-widget-grid">
+        <div class="card dash-widget" data-reveal>
+          <div class="w-top"><span class="w-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 6.5c0-1.9-2.2-3.4-5-3.4S7 4.6 7 6.5c0 4 10 2 10 6.5 0 2-2.2 3.5-5 3.5s-5-1.4-5-3.5"/></svg></span><span class="w-trend up">+2.1%</span></div>
+          <div class="w-value">$184,320</div>
+          <div class="w-label">Last payroll run total</div>
+        </div>
+        <div class="card dash-widget" data-reveal data-reveal-delay="1">
+          <div class="w-top"><span class="w-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span></div>
+          <div class="w-value">86</div>
+          <div class="w-label">Active employees</div>
+        </div>
+        <div class="card dash-widget" data-reveal data-reveal-delay="2">
+          <div class="w-top"><span class="w-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span><span class="status-pill completed">Filed</span></div>
+          <div class="w-value">Q3 2026</div>
+          <div class="w-label">Latest tax filing</div>
+        </div>
+        <div class="card dash-widget" data-reveal data-reveal-delay="3">
+          <div class="w-top"><span class="w-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span></div>
+          <div class="w-value">4 days</div>
+          <div class="w-label">Until next pay run</div>
+        </div>
+      </div>
+
+      <!-- PANELS: payroll runs + quick actions -->
+      <div class="dash-panels" id="payroll">
+        <div class="card dash-panel" data-reveal>
+          <div class="panel-head"><h3>Recent Payroll Runs</h3><a href="#payroll">View all</a></div>
+          <table class="dash-table">
+            <thead><tr><th>Pay Period</th><th>Pay Date</th><th>Gross Pay</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Aug 16 &ndash; Aug 31</td><td>Sep 5, 2026</td><td>$182,910</td><td><span class="status-pill completed">Completed</span></td></tr>
+              <tr><td>Aug 1 &ndash; Aug 15</td><td>Aug 22, 2026</td><td>$179,440</td><td><span class="status-pill completed">Completed</span></td></tr>
+              <tr><td>Jul 16 &ndash; Jul 31</td><td>Aug 8, 2026</td><td>$184,320</td><td><span class="status-pill completed">Completed</span></td></tr>
+              <tr><td>Sep 1 &ndash; Sep 15</td><td>Sep 19, 2026</td><td>Est. $186,000</td><td><span class="status-pill upcoming">Upcoming</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card dash-panel" data-reveal data-reveal-delay="1">
+          <div class="panel-head"><h3>Payroll Run Progress</h3></div>
+          <div class="mini-list">
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Hours submitted</strong><span>Completed Sep 15</span></div></div>
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><strong>Calculation review</strong><span>In progress</span></div></div>
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 6.5c0-1.9-2.2-3.4-5-3.4S7 4.6 7 6.5c0 4 10 2 10 6.5 0 2-2.2 3.5-5 3.5s-5-1.4-5-3.5"/></svg></span><div><strong>Approval & funding</strong><span>Pending your approval</span></div></div>
+          </div>
+          <div class="progress-bar"><div class="fill" style="width:66%;"></div></div>
+          <p class="form-note" style="margin-top:10px;">66% complete &middot; Approve by Sep 17 to guarantee on-time deposit.</p>
+        </div>
+      </div>
+
+      <!-- TAX FILINGS -->
+      <div class="card dash-panel" id="tax" style="margin-bottom:28px;" data-reveal>
+        <div class="panel-head"><h3>Tax Filing Summaries</h3><a href="#tax">Download all</a></div>
+        <table class="dash-table">
+          <thead><tr><th>Filing</th><th>Period</th><th>Filed Date</th><th>Status</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>Form 941 &ndash; Federal</td><td>Q2 2026</td><td>Jul 28, 2026</td><td><span class="status-pill completed">Filed</span></td><td><a href="#" class="btn btn-outline btn-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6"/><path d="M4 21h16"/></svg> PDF</a></td></tr>
+            <tr><td>State Unemployment (TX)</td><td>Q2 2026</td><td>Jul 30, 2026</td><td><span class="status-pill completed">Filed</span></td><td><a href="#" class="btn btn-outline btn-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6"/><path d="M4 21h16"/></svg> PDF</a></td></tr>
+            <tr><td>Form 941 &ndash; Federal</td><td>Q3 2026</td><td>&mdash;</td><td><span class="status-pill processing">In Progress</span></td><td><a href="#" class="btn btn-outline btn-sm" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6"/><path d="M4 21h16"/></svg> PDF</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- EMPLOYEES -->
+      <div class="card dash-panel" id="employees" style="margin-bottom:28px;" data-reveal>
+        <div class="panel-head"><h3>Employee Payment Records</h3><a href="#employees">Manage employees</a></div>
+        <table class="dash-table">
+          <thead><tr><th>Employee</th><th>Role</th><th>Pay Type</th><th>Last Paid</th><th>YTD Gross</th></tr></thead>
+          <tbody>
+            <tr><td>Maria Gonzalez</td><td>Store Manager</td><td>Salaried</td><td>Sep 5, 2026</td><td>$52,400</td></tr>
+            <tr><td>Tyrell Jackson</td><td>Warehouse Lead</td><td>Hourly</td><td>Sep 5, 2026</td><td>$38,120</td></tr>
+            <tr><td>Wei Chen</td><td>Accountant</td><td>Salaried</td><td>Sep 5, 2026</td><td>$47,900</td></tr>
+            <tr><td>Fatima Al-Sayed</td><td>Sales Associate</td><td>Hourly</td><td>Sep 5, 2026</td><td>$29,650</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- COMPLIANCE REPORTS -->
+      <div class="dash-panels" id="reports">
+        <div class="card dash-panel" data-reveal>
+          <div class="panel-head"><h3>Compliance Reports</h3></div>
+          <div class="mini-list">
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><div><strong>Q2 2026 Payroll Summary</strong><span>Generated Jul 31, 2026</span></div><a href="#" class="btn btn-outline btn-sm" style="margin-inline-start:auto;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6"/><path d="M4 21h16"/></svg></a></div>
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span><div><strong>2025 Year-End W-2 Package</strong><span>Generated Jan 15, 2026</span></div><a href="#" class="btn btn-outline btn-sm" style="margin-inline-start:auto;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6"/><path d="M4 21h16"/></svg></a></div>
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7l-3 6a3.5 3.5 0 0 0 7 0zM19 7l-3 6a3.5 3.5 0 0 0 7 0zM5 7h14M9 21h6"/></svg></span><div><strong>Certified Payroll &ndash; Job #4471</strong><span>Generated Sep 1, 2026</span></div><a href="#" class="btn btn-outline btn-sm" style="margin-inline-start:auto;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6"/><path d="M4 21h16"/></svg></a></div>
+          </div>
+        </div>
+        <div class="card dash-panel" data-reveal data-reveal-delay="1">
+          <div class="panel-head"><h3>Past Attended Filing Deadlines</h3></div>
+          <div class="mini-list">
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Q1 2026 Form 941</strong><span>Filed on time &ndash; Apr 28</span></div></div>
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>2025 W-2 Distribution</strong><span>Delivered Jan 31, 2026</span></div></div>
+            <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>State SUTA Renewal</strong><span>Completed Mar 3, 2026</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BILLING + SETTINGS -->
+      <div class="dash-account-grid" id="billing" style="margin-top:28px;">
+        <div class="card dash-panel" data-reveal>
+          <div class="panel-head"><h3>Payment Methods</h3><a href="#billing">Add new</a></div>
+          <div class="method-card"><div class="m-brand">ACH</div><div><strong>Business Checking &middot;&middot;3391</strong><span>Default funding account</span></div></div>
+          <div class="method-card"><div class="m-brand">VISA</div><div><strong>Visa &middot;&middot;4821</strong><span>Backup payment method</span></div></div>
+        </div>
+        <div class="card dash-panel" id="settings" data-reveal data-reveal-delay="1">
+          <div class="panel-head"><h3>Account Settings</h3></div>
+          <div class="form-field" style="margin-bottom:16px;"><label for="d-company">Company name</label><input id="d-company" type="text" value="Acme Co."></div>
+          <div class="form-field" style="margin-bottom:16px;"><label for="d-email">Notification email</label><input id="d-email" type="email" value="jordan@acme.com"></div>
+          <button type="button" class="btn btn-primary">Save Changes</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
