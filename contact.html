@@ -164,11 +164,13 @@
     <!-- 3. FORM + SUPPORT CHANNELS -->
     <section class="section" style="background:var(--color-surface-alt);">
       <div class="container">
-        <div class="split" style="align-items:flex-start;">
-          <div class="card" style="padding:36px 32px;" data-reveal>
-            <span class="eyebrow">Get a Quote</span>
-            <h2 style="margin-top:14px; font-size:26px;">Tell us about your business.</h2>
-            <form class="form-grid" style="margin-top:24px;">
+        <div class="contact-layout">
+          <div class="card contact-form-card" data-reveal>
+            <div class="contact-card-head center">
+              <span class="eyebrow">Get a Quote</span>
+              <h2>Tell us about your business.</h2>
+            </div>
+            <form class="form-grid">
               <div class="form-field"><label for="c-name">Full name</label><input id="c-name" type="text" placeholder="Jordan Lee"></div>
               <div class="form-field"><label for="c-company">Company name</label><input id="c-company" type="text" placeholder="Acme Co."></div>
               <div class="form-field"><label for="c-email">Work email</label><input id="c-email" type="email" placeholder="jordan@acme.com"></div>
@@ -177,14 +179,52 @@
               <div class="form-field full"><button type="button" class="btn btn-primary btn-lg" style="width:100%;">Send Message</button></div>
             </form>
           </div>
-          <div data-reveal data-reveal-delay="1">
-            <span class="eyebrow">Support Channels</span>
-            <h2 style="margin-top:14px;">Already a client?</h2>
-            <p style="margin-top:12px; color:var(--color-text-muted); font-size:15.5px;">Reach your dedicated specialist directly, or use one of these channels for faster routing.</p>
-            <div class="mini-list" style="margin-top:26px;">
-              <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><path d="M21 14v3a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 2v-1zM3 14v1a2 2 0 0 0 2 2h1v-6H5a2 2 0 0 0-2 2v1z"/></svg></span><div><strong>Live chat</strong><span>Available in your dashboard, Mon&ndash;Fri</span></div></div>
-              <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><strong>Urgent payroll issue</strong><span>Call +1 (800) 555-9876 &ndash; 24-hour guarantee</span></div></div>
-              <div class="mini-list-item"><span class="m-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><div><strong>Tax notice received</strong><span>Email taxsupport@meridianpayroll.com with the notice attached</span></div></div>
+          <div class="card contact-sidebar-card" data-reveal data-reveal-delay="1">
+            <div>
+              <div class="contact-card-head center">
+                <span class="eyebrow">Support Channels</span>
+                <h2>Already a client?</h2>
+                <p>Reach your dedicated specialist directly, or use one of these priority channels for fast routing.</p>
+              </div>
+              
+              <div class="contact-channel-list">
+                <div class="contact-channel-item">
+                  <span class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><path d="M21 14v3a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 2v-1zM3 14v1a2 2 0 0 0 2 2h1v-6H5a2 2 0 0 0-2 2v1z"/></svg></span>
+                  <div>
+                    <strong>Live chat support</strong>
+                    <span>Available in your dashboard, Mon&ndash;Fri</span>
+                  </div>
+                </div>
+                <div class="contact-channel-item">
+                  <span class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+                  <div>
+                    <strong>Urgent payroll hotline</strong>
+                    <a href="tel:+18005559876">+1 (800) 555-9876 &ndash; 24-hr guarantee</a>
+                  </div>
+                </div>
+                <div class="contact-channel-item">
+                  <span class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                  <div>
+                    <strong>Tax notice received</strong>
+                    <a href="mailto:taxsupport@meridianpayroll.com">taxsupport@meridianpayroll.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-sla-box">
+              <div class="sla-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                <span><strong>Fast Response:</strong> Guaranteed replies under 2 hours</span>
+              </div>
+              <div class="sla-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                <span><strong>Dedicated Expert:</strong> 1-on-1 assigned specialist</span>
+              </div>
+              <div class="sla-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                <span><strong>Encrypted &amp; Secure:</strong> 256-bit bank-grade privacy</span>
+              </div>
             </div>
           </div>
         </div>

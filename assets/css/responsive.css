@@ -280,6 +280,14 @@ input, button, select, textarea {
   .spotlight-quote blockquote {
     font-size: 18px;
   }
+  .contact-form-card,
+  .contact-sidebar-card {
+    padding: 20px 14px;
+  }
+  .contact-channel-item {
+    padding: 10px 12px;
+    gap: 10px;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -357,5 +365,33 @@ input, button, select, textarea {
   }
   .footer-links a {
     font-size: 12.5px;
+  }
+  .timeline {
+    margin-top: 16px;
+  }
+  .timeline::before {
+    left: 12px;
+  }
+  [dir="rtl"] .timeline::before {
+    right: 12px;
+  }
+  .timeline-dot {
+    inset-inline-start: -2px;
+    width: 28px;
+    height: 28px;
+  }
+  .timeline-dot svg {
+    width: 12px;
+    height: 12px;
+  }
+  .timeline-item {
+    padding-inline-start: 40px;
+    padding-bottom: 22px;
+  }
+  .timeline-item h3 {
+    font-size: 15px;
+  }
+  .timeline-item p {
+    font-size: 13px;
   }
 }

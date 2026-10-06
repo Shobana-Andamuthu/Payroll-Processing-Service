@@ -172,6 +172,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  width: fit-content;
+  max-width: fit-content;
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 700;
