@@ -436,6 +436,8 @@ section.hero:not(.inner-page-hero) {
 [data-theme="dark"] .cta-banner { background: linear-gradient(120deg, #060D17 0%, #0B7F58 120%); }
 .cta-banner h2 { color: #fff; font-size: clamp(24px, 3vw, 32px); max-width: 480px; }
 .cta-banner p { color: rgba(255,255,255,0.82); margin-top: 10px; max-width: 440px; }
+.cta-banner-actions,
+.cta-banner > div:last-child { display: flex; gap: 12px; flex-wrap: wrap; position: relative; z-index: 1; align-items: center; }
 .cta-banner .btn-primary { background: #fff; color: #0E2A47; }
 [data-theme="dark"] .cta-banner .btn-primary { color: #0A1420; }
 .cta-banner .btn-primary:hover { background: rgba(255,255,255,0.9); }
@@ -764,12 +766,19 @@ section.hero:not(.inner-page-hero) {
 .industry-chip-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 36px; }
 .industry-chip-row .chip { font-size: 14px; padding: 10px 20px; }
 
-.cta-split { display: grid; grid-template-columns: 1fr 1fr; align-items: center; border-radius: var(--radius-lg); overflow: hidden; background: var(--color-surface); border: 1px solid var(--color-border); }
+.cta-split { display: grid; grid-template-columns: 1fr 1fr; align-items: center; border-radius: var(--radius-lg); overflow: hidden; background: linear-gradient(120deg, var(--color-primary) 0%, #0B7F58 100%); color: #fff; box-shadow: var(--shadow-lg); }
+[data-theme="dark"] .cta-split { background: linear-gradient(120deg, #060D17 0%, #0B7F58 120%); }
 @media (max-width: 900px) { .cta-split { grid-template-columns: 1fr; } }
 .cta-split .cs-text { padding: 48px; }
-.cta-split .cs-text h2 { font-size: clamp(24px, 3vw, 32px); }
-.cta-split .cs-text p { color: var(--color-text-muted); margin-top: 12px; }
+.cta-split .cs-text .eyebrow { background: rgba(255,255,255,0.18); color: #fff; }
+.cta-split .cs-text h2 { font-size: clamp(24px, 3vw, 32px); color: #fff; }
+.cta-split .cs-text p { color: rgba(255,255,255,0.85); margin-top: 12px; }
 .cta-split .cs-text .hero-ctas { margin-top: 26px; }
+.cta-split .btn-primary { background: #fff; color: #0E2A47; }
+[data-theme="dark"] .cta-split .btn-primary { color: #0A1420; }
+.cta-split .btn-primary:hover { background: rgba(255,255,255,0.9); }
+.cta-split .btn-outline { border-color: rgba(255,255,255,0.4); color: #fff; }
+.cta-split .btn-outline:hover { border-color: #fff; color: #fff; background: rgba(255,255,255,0.1); }
 .cta-split img { width: 100%; height: 100%; min-height: 280px; object-fit: cover; }
 
 /* Left-aligned section head variant (used on Home 2 for typographic variety) */
