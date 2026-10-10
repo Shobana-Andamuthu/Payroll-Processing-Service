@@ -567,7 +567,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background: var(--color-primary);
   color: var(--color-text-inverse);
   padding: 80px 0 0;
-  margin-top: 120px;
+  margin-top: 0;
 }
 [data-theme="dark"] .site-footer { background: #060D17; }
 

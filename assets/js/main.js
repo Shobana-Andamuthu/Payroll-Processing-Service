@@ -377,19 +377,29 @@
     const sidebar = document.querySelector(".dash-sidebar");
     if (!sidebar) return;
 
-    if (toggle) toggle.addEventListener("click", () => sidebar.classList.toggle("is-open"));
+    function setSidebarOpen(isOpen) {
+      sidebar.classList.toggle("is-open", isOpen);
+      if (toggle) toggle.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    if (toggle) {
+      toggle.addEventListener("click", () => setSidebarOpen(!sidebar.classList.contains("is-open")));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") setSidebarOpen(false);
+      });
+    }
 
     document.addEventListener("click", (e) => {
       if (window.innerWidth > 1023) return;
       if (!sidebar.contains(e.target) && toggle && !toggle.contains(e.target)) {
-        sidebar.classList.remove("is-open");
+        setSidebarOpen(false);
       }
     });
 
-    bindDashboardViews(sidebar);
+    bindDashboardViews(sidebar, () => setSidebarOpen(false));
   }
 
-  function bindDashboardViews(sidebar) {
+  function bindDashboardViews(sidebar, closeSidebar) {
     const main = document.querySelector(".dash-main");
     if (!main) return;
 
@@ -433,7 +443,7 @@
       link.addEventListener("click", (event) => {
         event.preventDefault();
         showView(link.getAttribute("href").slice(1), true);
-        sidebar.classList.remove("is-open");
+        closeSidebar();
       });
     });
 

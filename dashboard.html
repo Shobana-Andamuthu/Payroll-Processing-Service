@@ -76,11 +76,6 @@
           <span class="dir-label">RTL</span>
         </button>
 
-        <a href="login.html" class="dashboard-logout-btn" aria-label="Log Out" title="Log Out">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
-            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>
-          </svg>
-        </a>
       </div>
     </div>
   </header>
@@ -89,11 +84,7 @@
 
 
   <div class="dash-shell">
-    <aside class="dash-sidebar">
-      <div class="dash-profile">
-        <img src="assets/images/avatars/jordan-lee.jpg" alt="Jordan Lee, account administrator" loading="lazy">
-        <div><strong>Jordan Lee</strong><span>Acme Co. &middot; Admin</span></div>
-      </div>
+    <aside class="dash-sidebar" id="dash-sidebar">
       <div class="dash-nav-group">
         <span class="group-label">Overview</span>
         <a href="#overview" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg> Dashboard</a>
@@ -110,16 +101,28 @@
         <a href="#billing" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg> Billing & Payments</a>
         <a href="#settings" class="dash-nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg> Account Settings</a>
       </div>
+      <div class="dash-sidebar-footer">
+        <a href="login.html" class="dashboard-logout-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+          <span>Log Out</span>
+        </a>
+      </div>
     </aside>
 
     <main class="dash-main">
       <div class="dash-topbar">
-        <button class="dash-menu-toggle" aria-label="Toggle dashboard menu" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg></button>
+        <button class="dash-menu-toggle" aria-label="Toggle dashboard menu" aria-controls="dash-sidebar" aria-expanded="false" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg></button>
         <div>
           <h1 id="overview">Welcome back, Jordan</h1>
           <p class="dash-date">Acme Co. &middot; Next payroll run: Friday, Sep 19, 2026</p>
         </div>
-        <a href="#payroll" class="btn btn-primary">Run Payroll Now</a>
+        <div class="dash-topbar-actions">
+          <div class="dash-profile">
+            <img src="assets/images/avatars/jordan-lee.jpg" alt="Jordan Lee, account administrator" loading="lazy">
+            <div><strong>Jordan Lee</strong><span>Acme Co. &middot; Admin</span></div>
+          </div>
+          <a href="#payroll" class="btn btn-primary">Run Payroll Now</a>
+        </div>
       </div>
 
       <!-- WIDGETS -->
